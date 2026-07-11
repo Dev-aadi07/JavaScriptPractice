@@ -24,7 +24,7 @@ body {
   background-color: green;
   padding: 10px 20px;
   border-radius: 10px;
-  height: 30vh;
+  height: 40vh;
   width: 20vw;
   font-size: 24px;
 }
@@ -52,4 +52,15 @@ body {
   padding: 0px 10px;
   border-radius: 10px;
   width: auto;
+  cursor: pointer;
+}
+
+.btn_container{
+  width: 100%;
+  display: flex;
+  gap: 4px;
+  background-color: #fff;
+}
+p{
+  font-size: 20px;
 }

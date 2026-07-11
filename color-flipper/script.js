@@ -1,23 +1,17 @@
-const colors = [
-  "red",
-  "blue",
-  "green",
-  "yellow",
-  "orange",
-  "pink",
-  "violet",
-  "cyan",
-  "brown",
-  "black"
-];
+const hex = "0123456789ABCDEF";
 
 const res = document.getElementById("result");
 const btn = document.getElementById("btn");
 
 
 function updateBgColor() {
-  const randomIndx = Math.floor(Math.random()*colors.length);
-  const color = colors[randomIndx];
+  let color = "#";
+  
+  for (let i = 0; i<6; i++) {
+    randomIdx = Math.floor(Math.random()*hex.length);
+    color = color+hex.charAt(randomIdx);
+  }
+  
   document.body.style.backgroundColor = color;
   res.textContent = color;
   res.style.backgroundColor = color;
