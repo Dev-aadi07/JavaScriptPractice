@@ -18,3 +18,20 @@ function updateBgColor() {
 }
 
 btn.addEventListener("click", updateBgColor);
+
+
+const copyBtn = document.getElementById("copy-btn");
+
+function copyColor() {
+  const bgColor = res.textContent;
+  navigator.clipboard.writeText(bgColor);
+
+  const msg = document.getElementById("message");
+  msg.textContent = "Copied!";
+
+  setTimeout(()=>{
+    msg.textContent = "";
+  }, 2000);
+}
+
+copyBtn.addEventListener("click", copyColor);
