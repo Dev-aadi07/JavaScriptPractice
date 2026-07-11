@@ -53,14 +53,8 @@ body {
   border-radius: 10px;
   width: auto;
   cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
 }
 
-.btn_container{
-  width: 100%;
-  display: flex;
-  gap: 4px;
-  /* background-color: #fff; */
-}
-p{
-  font-size: 20px;
-}
